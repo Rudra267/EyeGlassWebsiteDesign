@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.mobile-menu{
+    display: none;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 30% 50%;
+}
+.elem1{
+    /* background-color: red; */
+    padding: 25px 40px;
+    display: flex;
+}
+.elem1 .items{
+    /* background-color: blue; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+.elem1 i{
+    display: none;
+}
+.elem1 .items h1{
+    color: #000000da;
+    font-size: 16px;
+    font-family: "poppins";
+    font-weight: 500;
+    cursor: pointer;
+}
+.target{
+    color: #0000007a;
+}
+
+.elem1 .golas{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(74, 90, 4); */
+    display: flex;
+    justify-content: flex-start;
+}
+.elem1 .golas .gola{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+
+.elem2{
+    /* background-color: aquamarine; */
+    padding: 20px 40px;
+}
+.elem2 .nav-2{
+    /* background-color:blueviolet; */
+    width: 53%;
+    display: flex;
+    justify-content: space-between;
+}
+.elem2 .nav-2 h1{
+    color: #000000dc;
+    font-family: "poppins";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.elem3{
+    /* background-color:yellowgreen; */
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.elem3::-webkit-scrollbar{
+    background-color: transparent;
+    height: 4px;
+}
+.elem3::-webkit-scrollbar-thumb{
+    background-color: #F94F0F;
+    cursor: pointer;
+}
+.elem3 .box{
+    flex-shrink: 0;
+    width: 50%;
+    padding: 20px;
+    margin-left: 18%;
+    /* background-color: red; */
+}
+.elem3 .box h1{
+    font-weight: "poppins";
+    font-weight: 500;
+    padding-left:55px ;
+}
+
+.elem3 .box .inner-box{
+    display: flex;
+    gap: 30px;
+    font-family: "poppins";
+    font-weight: 400;
+}
+.elem3 .box .inner-box h4:nth-child(2){
+    color: #00000072;
+}
+.elem3 .box .inner-box h4:nth-child(1){
+    font-size: 20px;
+}
+.elem3 .box h1{
+    font-size: 150px;
+}
+.elem4{
+    /* background-color: rgb(20, 180, 248); */
+    display: flex;
+    overflow-x: auto;
+}
+.elem4 img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.elem4::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px){
+    .main{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 20% 60%;
+        position: relative;
+        overflow: hidden;
+    }
+   
+    .mobile-menu{
+        z-index: 9;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #f94d0fde;
+        border-radius: 0% 0% 100% 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0%);
+    }
+    .mobile-menu .close{
+        z-index: 10;
+        color: #ffffff;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        padding: 8px;
+        font-size: 25px;
+        top:2%;
+        right:6%;
+        position: absolute;
+    }
+    .mobile-menu h1{
+        font-family: "poppins";
+        line-height: 80px;
+        font-size: 43px;
+        font-weight: 300;
+        color: #000000c6;
+    }
+    .elem1{
+        /* background-color: red; */
+        padding: 25px 40px;
+        display: flex;
+        position: relative;
+    }
+    .elem1 .items{
+        display: none;
+    }
+  
+    .elem1 i{
+        position: absolute;
+        display: block;
+        font-size: 30px;
+        right: 8%;
+    }
+    .target{
+        color: #0000007a;
+    }
+    
+    .elem1 .golas{
+        width: 60%;
+        height: 100%;
+        /* background-color: rgb(74, 90, 4); */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .elem1 .golas .gola{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #000;
+    }
+    
+    
+    .elem2{
+        /* background-color: aquamarine; */
+        padding: 20px 40px;
+    }
+    .elem2 .nav-2{
+        /* background-color:blueviolet; */
+        width: 100%;
+        display: flex;
+        gap: 11px;
+    }
+    .elem2 .nav-2 h1{
+        color: #000000dc;
+        font-family: "poppins";
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    .elem3{
+        /* background-color:yellowgreen; */
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .elem3::-webkit-scrollbar{
+        background-color: transparent;
+        height: 8px;
+    }
+    .elem3::-webkit-scrollbar-thumb{
+        background-color: #F94F0F;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .elem3 .box{
+        flex-shrink: 0; 
+        padding: 42%;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .elem3 .box h1{
+        font-weight: "poppins";
+        font-weight: 400;
+        padding-left:55px ;
+    }
+    
+    .elem3 .box .inner-box{
+        display: flex;
+        gap: 30px;
+        font-family: "poppins";
+        font-weight: 400;
+    }
+    .elem3 .box .inner-box h4:nth-child(2){
+        color: #00000072;
+    }
+    .elem3 .box .inner-box h4:nth-child(1){
+        font-size: 20px;
+    }
+    .elem3 .box h1{
+        font-size: 90px;
+    }
+    .elem4{
+        /* background-color: rgb(20, 180, 248); */
+        display: flex;
+        overflow-x: auto;
+    }
+    .elem4 img{
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    .elem4::-webkit-scrollbar{
+        display: none;
+    }
+}
